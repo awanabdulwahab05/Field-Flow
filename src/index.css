@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* ================================
+   Global
+================================ */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* ================================
+   Buttons
+================================ */
+
+.btn-primary {
+  @apply rounded-xl bg-orange-600 px-5 py-3 font-medium text-white transition hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-200;
+}
+
+.btn-secondary {
+  @apply rounded-xl border border-slate-300 bg-white px-5 py-3 font-medium text-slate-700 transition hover:border-orange-500 hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-100;
+}
+
+.btn-danger {
+  @apply rounded-xl bg-red-600 px-5 py-3 font-medium text-white transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-200;
+}
+
+.btn-success {
+  @apply rounded-xl bg-green-600 px-5 py-3 font-medium text-white transition hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-200;
+}
+
+/* ================================
+   Cards
+================================ */
+
+.card {
+  @apply rounded-xl border border-slate-200 bg-white p-6 shadow-sm;
+}
+
+/* ================================
+   Inputs
+================================ */
+
+.input {
+  @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-100;
+}
+
+.label {
+  @apply mb-2 block text-sm font-medium text-slate-700;
+}
+
+/* ================================
+   Headings
+================================ */
+
+.page-title {
+  @apply text-3xl font-bold text-slate-900;
+}
+
+.section-title {
+  @apply text-xl font-bold text-slate-900;
+}
+
+.page-description {
+  @apply mt-2 text-slate-500;
+}
+
+/* ================================
+   Status Badges
+================================ */
+
+.status-pending {
+  @apply rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700;
+}
+
+.status-progress {
+  @apply rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-orange-700;
+}
+
+.status-completed {
+  @apply rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700;
+}
+
+.status-rejected {
+  @apply rounded-full bg-red-100 px-3 py-1 text-xs font-semibold text-red-700;
+}
+
+/* ================================
+   Layout
+================================ */
+
+.page-container {
+  @apply mx-auto max-w-7xl px-6 py-10;
+}
+
+.section {
+  @apply mb-8;
+}
